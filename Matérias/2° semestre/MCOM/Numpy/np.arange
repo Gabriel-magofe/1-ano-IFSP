@@ -1,0 +1,6 @@
+print(np.arange(0, 10, 2))
+
+np.arange(start, stop, step, dtype=None)
+start
+stop (obrigatorio)
+step

@@ -1,0 +1,6 @@
+print(np.linspace(0, 1, 5))
+
+start (número) [Obrigatório]: O valor inicial da sequência.
+ stop (número) [Obrigatório]: O valor final do intervalo.
+ num (int) [Opcional]: A quantidade de amostras a serem geradas. Valor padrão: 50.
+ endpoint (bool) [Opcional]: Se True, o valor de stop é incluído na sequência. Se False, é excluído. Valor padrão: True.
