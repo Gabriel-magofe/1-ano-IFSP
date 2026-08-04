@@ -1,0 +1,31 @@
+🧠 Redes Neurais e Modelos (O Cérebro)
+
+torch (PyTorch) – Criação, treino e depuração de redes neurais.
+torchvision – Suporte para processamento de imagens e visão computacional.
+torchaudio – Suporte para processamento de áudio e voz.
+transformers – Acesso a milhares de modelos de IA abertos da Hugging Face.
+huggingface_hub – Utilitário para baixar e gerenciar esses modelos locais.
+
+🤖 Agentes e Orquestração de IAs (A Lógica)
+
+crewai – Criação de equipes de agentes de IA que colaboram entre si.
+crewai-tools – Ferramentas prontas para os agentes usarem (como buscas).
+langchain – Framework para conectar modelos de linguagem a APIs e dados.
+langchain-community – Extensões comunitárias e conectores do LangChain.
+
+📊 Manipulação de Dados e Gráficos (A Cozinha)
+
+numpy – Computação matemática avançada e matrizes numéricas.
+pandas – Manipulação, limpeza e análise de tabelas de dados (CSV, Excel).
+matplotlib – Geração de gráficos para acompanhar o aprendizado da IA.
+seaborn – Visualização de dados e gráficos estatísticos mais modernos.
+
+🔌 Utilitários e Arquivos (A Infraestrutura)
+
+python-dotenv – Gerenciamento seguro de chaves de API ocultas em arquivos .env.
+pypdf – Leitura e extração de texto de documentos PDF.
+notebook (Jupyter Notebook) – Ambiente para rodar códigos e ver gráficos em blocos.
+
+🖥️ Interface Visual (A Vitrine)
+
+streamlit – Criação rápida de sites e chats para mostrar suas IAs funcionando.

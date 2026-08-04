@@ -1,0 +1,13 @@
+MCOM 27 04 2026
+
+libre office cálc.
+
+PROCV(valor; tabela; índice; [intervalo])
+PROCH ''
+
+pesquisa em uma tabela cujos atributos são separados por colunas/linhas
+
+valor: valor a ser procurado na tabela 
+Tabela: A tabela inteiras. todas as células correspondentes a tabela que os dados serão buscados.
+índice: Número de colunas a direita cujo resultado será aproveitado
+intervalo: Falso Verdadeiro

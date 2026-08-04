@@ -1,0 +1,34 @@
+
+type no link
+Tabelas em html
+
+As 4 Tags Principais
+Para criar uma tabela básica, você precisa combinar estas quatro tags:
+
+<table>: Abre e fecha a tabela.
+
+<tr> (Table Row): Cria uma linha.
+
+<th> (Table Header): Cria uma célula de cabeçalho (texto em negrito e centrado).
+
+<td> (Table Data): Cria uma célula de dado comum.
+
+<caption>
+
+
+
+css
+
+border-collapse: collapse; -> Elimina o espaço duplo entre as bordas, unindo-as em linhas únicas.
+
+width: 100%; -> Define a largura da tabela (pode usar pixels ou porcentagem).
+
+border: 1px solid #cor; -> Aplica a linha divisória (geralmente aplicada em th e td).
+
+caption-side
+
+margin: auto; -> Centraliza a tabela inteira horizontalmente na tela (exige que a tabela tenha uma width definida).
+
+margin-bottom: 20px; -> Cria um espaço entre o final da tabela e o próximo elemento da página (como um parágrafo ou outra tabela).
+
+border-spacing: 10px; -> Funciona como a "margem" entre as células, mas só funciona se você mudar para border-collapse: separate;.

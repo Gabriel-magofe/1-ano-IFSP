@@ -1,0 +1,31 @@
+INGI 13 05 2026
+
+LISTAS
+ol= ordenada
+ul= não ordenada
+type= I, i, 1, A
+start 
+reversed
+dl= Listas de descrição
+dt= elemento raiz
+dd= elementos
+
+
+CSS
+
+Linguagem de estilos em cascata.
+
+dedicada a descrever o estilo da pagina
+nível 1= estilos inline afeta 1 tag
+
+style, font-style, etc na tag
+
+nível 2= estilos internos afeta 1 paginas
+
+style, etc no head
+
+nível 3= afeta varias paginas
+
+
+
+

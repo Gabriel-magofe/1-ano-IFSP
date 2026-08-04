@@ -1,0 +1,38 @@
+table{
+    border: 1px solid black;
+    border-collapse:collapse;
+    text-align: center;
+    margin: 20px auto;
+    margin-bottom: auto;
+}
+
+th, td{
+    border: 1px solid black;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: red;
+}
+.vermelho{
+   color: red;
+   font-weight: bold;
+}
+.azul{
+   color: blue;
+   font-weight: bold;
+}
+.verde{
+   color: green;
+   font-weight: bold;
+}
+.amarelo{
+   color: rgb(185, 185, 0);
+   font-weight: bold;
+}
+italico{
+    font-style: italic;
+}

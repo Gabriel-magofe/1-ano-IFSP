@@ -1,0 +1,12 @@
+INGI 06 05 2026
+
+inglês é uma pratica social
+estrutura navegacional
+links externos
+target self e blank
+link 
+id= indereço interno
+li= lista não ordenada
+ul= organizar listas
+ol= lista ordenada 
+link de download(precisa de servidor)

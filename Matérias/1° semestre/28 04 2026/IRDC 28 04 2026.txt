@@ -1,0 +1,30 @@
+IRDC 28 04 2026
+
+camada 4
+transporte
+responsável pela comunicação logica entre processos de aplicativos em diferentes hosts
+PDU: TCP ou UDP
+gerencia integridade dos dados
+utiliza portas para identificar aplicações
+
+protocolo TCP
+Protocolo orientado(handshake) a conexão. Garante que todos os dados cheguem na ordem correta e sem erros através da confiabilidade (ACKs)
+controla o fluxo dos dados para que o emissor não sobrecarregue o receptor lento, evitando perda de pacotes 
+
+protocolo UDP
+Não orientado a conexão ("Best effort").envia dados sem esperar confirmação 
+
+conceito de portas
+
+É um número de 16 bits (vai de 0 a 65535).
+Pense na porta como um ponto de acesso lógico ou um "canal" dentro do seu computador.
+
+endereçamento: As portas permitem que o sistema operacional entregue os dados para o processo de software correto
+multiplexação: várias aplicações podem ser usar a rede de simultaneidade através de diferentes números de porta
+sockets: A combinação de [endereço IP] + [numero de porta] cria um socket único de comunicação. O socket não é um "objeto" físico, mas a combinação de um endereço IP e uma porta. Ele representa uma ponta da comunicação.
+
+Equipamentos: Load Balancers
+distribuem requisições entre vários servidores, eles garantem a alta disponibilidade e escalabilidade de grandes sites e serviços de streaming.
+
+
+

@@ -1,0 +1,8 @@
+Faça enquanto
+
+O "Faça... Enquanto" (ou do... while) é uma estrutura de repetição (loop) que garante que um bloco de código seja executado pelo menos uma vez antes de testar se deve continuar repetindo.
+
+A Regra de Ouro
+Execute primeiro, pergunte depois.
+
+Ao contrário do Enquanto simples (que checa a condição no início e pode nem rodar), o Faça Enquanto roda o código e só testa a condição no final

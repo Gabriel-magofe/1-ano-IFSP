@@ -1,0 +1,13 @@
+MAT 28 04 2026
+
+Plano Cartesiano
+ domínio e contradomínio
+conjunto imagem
+relação inversa
+
+Tipos de relação
+não vai cair na prova
+relação reflexiva
+relação simétrica
+relação antissimétrica
+relação transitiva

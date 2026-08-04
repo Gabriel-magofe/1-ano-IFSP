@@ -1,0 +1,18 @@
+frutas = ["maçã", "banana", "laranja"]
+print(frutas[0])
+frutas.append("uva")
+print(frutas)
+frutas.insert(1, "abacaxi")
+print(frutas)
+frutas.pop(2)
+print(frutas)
+frutas.remove("banana")
+print(frutas)
+frutas[1] = "pera"
+print(frutas)
+frutas.sort()
+print(frutas)
+frutas.reverse()
+print(frutas)
+frutas.clear()
+print(frutas)

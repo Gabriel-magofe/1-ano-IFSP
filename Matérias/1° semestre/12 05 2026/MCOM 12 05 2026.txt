@@ -1,0 +1,9 @@
+MCOM 12 05 2026
+gráficos
+sã representações de dados de forma visual 
+tipos:
+Colunas: São utilizados para comparar quantidades entre grupos diferentes
+Linhas: mostrar como algo mudou
+pizza: mostrar a proporção em relação ao total
+
+gráficos no libre office calc
