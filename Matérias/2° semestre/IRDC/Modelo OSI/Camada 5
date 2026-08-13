@@ -1,0 +1,47 @@
+Camada de Sessão
+
+intermediaria entre transporte(4) e apresentação(6)
+
+Sessão= canal de dialogo
+
+controle de dialogo
+    gerencia direção da comunicação, a ordem de quem fala
+        Simplex
+            Só um Fala, sentido fixo
+        Half-Duplex
+            intercala, cada um fala uma hora
+        Full-Duplex
+            todos fala, ele controla, entende
+        
+Gerenciamento de Tokens
+    chave pra fazer algo
+    Gerada por algoritimo
+    Protege de SQL-injection
+    ID do usuário
+    Impede dominio de colisão
+    quem tem ele pode executar, quem não tem não
+
+Operação
+    abertura
+        autenticação -- ligação direta
+        negocia regras
+    Manutenção
+        Monitora a conexão
+        insere checkpoints
+        gerencia troca
+        expiração
+    encerramento
+        "Dá tchau"
+    
+Protocolos
+    RPC - execução remota
+    NetBIOS - Gerencia Sessões e nomes em redes locais windows
+    PPTP/L2TP - cria e gerencia sessões de tunelamento -- VPN
+    SOCKS - Servidor proxy
+    
+tunelamento -- conexão exclusica - processo logico - gera outro token - IPs novos exclusivos
+
+
+
+
+
