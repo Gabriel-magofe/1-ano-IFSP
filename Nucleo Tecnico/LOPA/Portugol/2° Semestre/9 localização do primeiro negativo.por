@@ -1,33 +1,28 @@
-// 9) Dado um vetor de N números, imprimir a localização do primeiro número negativo, se houver.
-programa
-{
-    funcao inicio()
-    {
-        inteiro R
-        inteiro A[100]
-        inteiro posicao = -1
+programa {
+    funcao inicio() {
+        
+     inteiro a[5], i, pos = -1
+		logico verifica = falso
 
-        escreva("Digite a quantidade de números: ")
-        leia(R)
+		para(i = 0; i <= 4; i++){
+			escreva("Digite o ", i+1, "° elemento de A: ")
+			leia(a[i])
+		}
 
-        para (inteiro i = 0; i < R; i++)
-        {
-            escreva("Digite o ", i + 1, "º número: ")
-            leia(A[i])
+		para(i = 0; i <= 4; i++){
+			se(a[i] < 0){
+				verifica = verdadeiro
+				pos = i+1
+				pare
+			}
+		}
+		se(verifica == verdadeiro){
+			escreva("Posição: ", pos)
+		}senao{
+			escreva(" Não há número negativo.")
+		}
+	}
 
-            se (A[i] < 0 e posicao == -1)
-            {
-                posicao = i
-            }
-        }
-
-        se (posicao != -1)
-        {
-            escreva("O primeiro número negativo está na posição: ", posicao)
-        }
-        senao
-        {
-            escreva("Não há números negativos no vetor.")
-        }
+        
     }
 }
