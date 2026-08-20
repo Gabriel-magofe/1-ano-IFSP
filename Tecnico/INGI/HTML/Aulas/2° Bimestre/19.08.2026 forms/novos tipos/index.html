@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Novos Tipos de Input HTML5</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <form action="#" method="post">
+        <h2>Painel de Controle</h2>
+        <p>Preencha os dados abaixo. O formulário utiliza apenas validações nativas do navegador.</p>
+
+        <fieldset>
+            <legend>Busca Semântica</legend>
+            <div class="campo">
+                <label for="busca">Buscar configurações anteriores:</label>
+                <!-- o tipo 'search' adiciona um botão nativo para limpar o campo -->
+                <input type="search" id="busca" name="busca" placeholder="Digite termos de busca...">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações de Rede</legend>
+            <div class="campo">
+                <label for="emails">E-mails de Alerta (múltiplos endereços permitidos):</label>
+                <!-- atributo 'multiple' permite lista separada por vírgula -->
+                <input type="email" id="emails" name="emails" multiple placeholder="usuario1@provedor.com, usuario2@provedor.com">
+            </div>
+            <div class="campo">
+                <label for="website">URL do Portfólio Pessoal:</label>
+                <!-- valida a obrigatoriedade do protocolo completo (http:// ou https://) -->
+                <input type="url" id="website" name="website" placeholder="https://exemplo.com">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados do Usuário</legend>
+            <div class="campo">
+                <label for="idade">Idade (Restrição: entre 18 e 60 anos):</label>
+                <!-- atributos 'min', 'max' e 'step' delimitam o valor escalar aceito -->
+                <input type="number" id="idade" name="idade" min="18" max="60" step="1" placeholder="Digite sua idade">
+            </div>
+            <div class="campo">
+                <label for="idioma">Idioma Preferencial para Suporte (Datalist):</label>
+                <!-- campo de texto livre associado a uma lista de sugestões pré-definidas -->
+                <input type="text" id="idioma" name="idioma" list="idiomas" placeholder="Digite ou escolha um idioma...">
+                <datalist id="idiomas">
+                    <option value="Espanhol"></option>
+                    <option value="Inglês"></option>
+                    <option value="Francês"></option>
+                </datalist>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferências de Agenda e Datas</legend>
+            <div class="campo">
+                <label for="nascimento">Data de Nascimento (Restrição temporal desde 1900):</label>
+                <!-- atributo 'min' define a barreira temporal  -->
+                <input type="date" id="nascimento" name="nascimento" min="1900-01-01">
+            </div>
+            <div class="campo">
+                <label for="hora_reuniao">Horário Ideal de Contato (Horas, minutos):</label>
+                <input type="time" id="hora_reuniao" name="hora_reuniao">
+            </div>
+            <div class="campo">
+                <label for="agenda_completa">Agendamento de Eventos (Data combinada com Hora Local):</label>
+                <input type="datetime-local" id="agenda_completa" name="agenda_completa">
+            </div>
+            <div class="campo">
+                <label for="mes_faturamento">Mês de Referência Fiscal (Mês/Ano):</label>
+                <input type="month" id="mes_faturamento" name="mes_faturamento">
+            </div>
+            <div class="campo">
+                <label for="semana_projeto">Semana de Entrega do Projeto (Semana/Ano):</label>
+                <input type="week" id="semana_projeto" name="semana_projeto">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Interface Visual</legend>
+            <div class="campo">
+                <label for="brilho">Brilho do Monitor (Volume qualitativo de 0 a 100):</label>
+                <!-- exibe um controle deslizante ('slider') sem a necessidade de digitação numérica exata  -->
+                <input type="range" id="brilho" name="brilho" min="0" max="100" value="50">
+            </div>
+            <div class="campo">
+                <label for="cor_preferida">Seletor da Cor de Fundo do Tema:</label>
+                <!-- abre o painel nativo do sistema operacional para coletar cores em formato Hexadecimal -->
+                <input type="color" id="cor_preferida" name="cor_preferida" value="#08055F">
+            </div>
+        </fieldset>
+
+        <input type="submit" value="Salvar e Validar Tudo">
+    </form>
+
+</body>
+</html>

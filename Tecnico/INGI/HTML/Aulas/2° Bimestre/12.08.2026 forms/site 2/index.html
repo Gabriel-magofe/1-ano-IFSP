@@ -1,30 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo de botão de rádio e checkbox</title>
+    <title>Exemplo Botão de Radio e Checkbox</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Exemplo de botão de rádio e checkbox</h2>
     <section>
-        <fieldset>
-            <legend>Escolha suas preferências:</legend>
-            <label for="option1">Opção 1</label>
-            <input type="radio" id="option1" name="preferences" value="option1">
-            <br>
-            <label for="option2">Opção 2</label>
-            <input type="radio" id="option2" name="preferences" value="option2">
-            <br>
-            <label for="option3">Opção 3</label>
-            <input type="checkbox" id="option3" name="preferences" value="option3">
-            <br>
-            <label for="option4">Opção 4</label>
-            <input type="checkbox" id="option4" name="preferences" value="option4">
-            <br><br>
+        <h2>Exemplo de Botão de Radio e Checkbox</h2>
+        <form>
+            <fieldset>
+                <legend>Escolha uma opção:</legend>
+                <input type="radio" id="opcao1" name="opcoes" value="opcao1">
+                <label for="opcao1">Opção 1</label><br>
+
+                <input type="radio" id="opcao2" name="opcoes" value="opcao2">
+                <label for="opcao2">Opção 2</label><br>
+
+                <input type="radio" id="opcao3" name="opcoes" value="opcao3">
+                <label for="opcao3">Opção 3</label><br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Marque quantas opções desejar:</legend>
+                <input type="checkbox" id="opcao1" name="opcoes2" value="opcao1">
+                <label for="opcao1">Opção 1</label><br>
+
+                <input type="checkbox" id="opcao2" name="opcoes2" value="opcao2">
+                <label for="opcao2">Opção 2</label><br>
+
+                <input type="checkbox" id="opcao3" name="opcoes2" value="opcao3">
+                <label for="opcao3">Opção 3</label><br>
+
+            </fieldset>
             <input type="submit" value="Enviar">
-        </fieldset>
+        </form>
     </section>
 </body>
 </html>

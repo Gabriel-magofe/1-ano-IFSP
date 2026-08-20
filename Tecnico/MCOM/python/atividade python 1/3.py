@@ -1,0 +1,11 @@
+import numpy as np
+m=np.array([620, 650, 640, 680])
+v=np.array([580, 590, 610, 630])
+ver= np.arange(start=1, stop=5, step=1)
+vvm= np.array([ver, m, v])
+print(vvm)
+co= np.concatenate([m, v])
+ma= np.mean(co)
+print("Média geral: ", ma)
+sa= np.sum(co)
+print("Soma das médias: ", sa)

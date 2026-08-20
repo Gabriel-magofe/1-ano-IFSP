@@ -1,0 +1,12 @@
+import numpy as np
+b1= np.array([14.5, 13.0, 12.5, 16.0, 21.0])
+b2= np.array([25.5, 28.0, 27.5, 24.0, 20.0])
+h= np.arange(start=0, stop=10, step=2)
+h2= np.arange(start=10, stop=20, step=2)
+bb1= np.array([h, b1])
+bb2= np.array([h2, b2])
+print(bb1, "\n \n", bb2)
+co= np.concatenate((b1, b2))
+ma= np.mean(co)
+sa= np.sum(co)
+print("Média: ", ma, "\n", "Soma: ", sa)

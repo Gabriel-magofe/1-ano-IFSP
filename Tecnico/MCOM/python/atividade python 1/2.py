@@ -1,0 +1,13 @@
+import numpy as np
+A= np.array([1200, 1350, 1100, 1400, 1300])
+B= np.array([900, 950, 1050, 1150, 1200])
+anos= np.array([2019, 2020, 2021, 2022, 2023])
+c = np.arange(start=2019, stop=2024, step=1)
+aab= np.array([anos, A, B])
+print(aab)
+ma= np.mean(A)
+mb= np.mean(B)
+print("Média da região A: ", ma, "\n", "Média da região B: ", mb)
+c= np.concatenate((A, B))
+d= np.sum(c)
+print("Desmatamento total: ", d)

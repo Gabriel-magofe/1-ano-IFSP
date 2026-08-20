@@ -1,0 +1,42 @@
+section {
+	border-radius: 10px;
+	background-color: #ddd;
+	width: 40%;
+	margin: 10px auto;
+	padding: 20px;
+	font-family: calibri, sans-serif;
+}
+
+h2 {
+	text-align: center;
+	margin: 0;
+}
+
+input, select {
+	display: block;
+	width: 100%;
+	border-radius: 5px;
+	margin: 8px 0;
+	padding: 12px 20px;
+	outline: none;
+}
+
+
+input[type=submit], input[type=reset] {
+	background-color: #007700;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+	background-color: #009900;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+	border: 2px solid #f00;
+}
+
+* {
+	box-sizing: border-box;
+}
