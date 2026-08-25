@@ -7,5 +7,3 @@ ma= np.array([month, a])
 b= np.sum(a)
 c= np.mean(a)
 print(ma, "\n", "Total: ", b, "\n", "Média: ", c)
-
-
