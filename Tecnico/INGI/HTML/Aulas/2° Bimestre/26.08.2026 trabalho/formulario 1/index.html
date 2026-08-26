@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Cadastro</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" minlength="1" maxlength="12" required>
+            <label for="data">Mês e Ano de Nascimento:</label>
+            <input type="month" id="data" name="data" min="1900-01" max="2002-12">
+            <label for="filhos">Quantidade de Filhos:</label>
+            <input type="number" id="filhos" name="filhos" min="0" required>
+            <label for="foto">Foto:</label>
+            <input type="file" id="foto" name="foto" accept="image/*">
+            
+            <label for="aceitar-email">Deseja receber notícias pelo e-mail?</label>
+            <input type="radio" id="aceitar" name="aceitar-email" value="sim">
+            <label for="aceitar">Sim</label>
+            <input type="radio" id="nao-aceitar" name="aceitar-email" value="não">
+            <label for="nao-aceitar">Não</label>
+
+            <label for="indicacao">Como ficou sabendo de nosso site? </label>
+            <select name="indicacao" id="indicacao">
+                <option value="">escolha</option>
+                <option value="redes-sociais">Redes Sociais</option>
+                <option value="fóruns">Fóruns</option>
+                <option value="indicação">Indicação</option>
+                <option value="jornal">Jornal</option>
+                <option value="amigos">Amigos</option>
+                <option value="outros">Outros</option>
+            </select>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+    </fieldset>
+    </form> 
+</body>
+</html>
