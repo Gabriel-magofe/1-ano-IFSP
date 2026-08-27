@@ -2,17 +2,17 @@
 programa {
     inclua biblioteca Util --> u 
     funcao inicio() {
-        inteiro A[16], B[16]
+        real A[15], B[15]
         para (inteiro i = 0; i < 15; i++) {
             A[i]=u.sorteia(1, 100)
-            se (A[i]%2==0) {
-                B[i]=A[i/2]
+            se (i%2==0) {
+                B[i]=A[i]/2
             }senao{
-                B[i]=A[i]*1.5
-            }
-        para (i = 0; i < 20; i++) {
-            escreva("A[", i+1, "] = ", A[i], " | B[", i, "] = ", B[i], "\n")
+                B[i]=A[i] * 1.5
+           }
         }
+        para (inteiro i = 0; i < 15; i++) {
+            escreva("A[", i+1, "] = ", A[i], " | B[", i+1, "] = ", B[i], "\n")
         }
+      }
     }
-}

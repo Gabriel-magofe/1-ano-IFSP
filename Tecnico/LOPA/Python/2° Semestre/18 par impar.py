@@ -6,7 +6,7 @@ A = [0] * 15
 B = [0] * 15
 for i in range(15):
     A[i] = r.randint(1, 100)
-    if A[i]%2==0:
+    if i%2==0:
         B[i]=A[i]/2
     else:
         B[i]=A[i]*1.5
