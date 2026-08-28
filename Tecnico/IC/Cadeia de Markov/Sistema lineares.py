@@ -52,9 +52,12 @@ while True:
         resolve(a,b)
     elif q == "arquivo":
         nome=input("Digite o nome do arquivo:\n")
-        matriz = pd.read_csv(nome, sep=",")
-        a = matriz.iloc[:, :-1].values
-        b = matriz.iloc[:, -1].values
-        resolve(a,b)
+        try:
+            matriz = pd.read_csv(nome, sep=",")
+            a = matriz.iloc[:, :-1].values
+            b = matriz.iloc[:, -1].values
+            resolve(a,b)
+        except:
+            print("Erro\n")
     else:    
         print("Opção inválida\n")
