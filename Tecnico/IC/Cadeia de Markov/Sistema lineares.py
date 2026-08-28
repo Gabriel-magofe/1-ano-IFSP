@@ -1,3 +1,5 @@
+# cd '.\tecnico\IC\Cadeia de Markov\'  
+
 import numpy as np
 import pandas as pd
 
@@ -17,27 +19,27 @@ while True:
     if q == "16 a":
         a=[[1, 3, 1],[3, -3, 1],[0, 2, 1]]
         b=[0, 8, 0]
-        resolve(a, b)
+
     elif q == "16 b":
         a=[[1, 2, 4],[2, 3, -1],[1, 0, -14]]
         b=[0, 8, 0]
-        resolve(a, b)
+
     elif q == "16 c":
         a=[[1, 1, 1],[2, 1, -1],[2, -1, -7]]
         b=[4, 10, 0]
-        resolve(a, b)
+
     elif q == "17":
         a=[[1, 1, 0],[2, 2, 0],[3, 3, 0]]
         b=[3, 6, 8]
-        resolve(a, b)
+
     elif q == "18":
         a=[[1, 4, 7],[2, 3, 6],[5, 1, -1]]
         b=[2, 2, 8]
-        resolve(a, b)
+
     elif q == "19":
         a=[[2, 1, 1, 1],[1, 2, 1, 1],[1, 1, 2, 1],[1, 1, 1, 2]]
         b=[1, 2, 3, 4]
-        resolve(a, b)
+
     elif q == "meu":
         l=int(input("Digite a quantidade de equações e incognitas:\n"))
         a=[]
@@ -49,15 +51,14 @@ while True:
             a.append(g)
         for i in range(l):
             b.append(int(input(f"Digite o {i+1}º termo independente:\n")))
-        resolve(a,b)
     elif q == "arquivo":
         nome=input("Digite o nome do arquivo:\n")
-        try:
-            matriz = pd.read_csv(nome, sep=",")
-            a = matriz.iloc[:, :-1].values
-            b = matriz.iloc[:, -1].values
-            resolve(a,b)
-        except:
-            print("Erro\n")
+        matriz = pd.read_csv(nome, header=None)
+        print("\n", matriz, "\n")
+        a = matriz.iloc[:, 0:-1].values
+        b = matriz.iloc[:, -1].values 
+        print("\n", a, "\n")
+        print(b, "\n")
     else:    
         print("Opção inválida\n")
+    resolve(a,b)
