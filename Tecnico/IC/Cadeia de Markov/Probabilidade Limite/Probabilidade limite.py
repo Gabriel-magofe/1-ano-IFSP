@@ -1,8 +1,8 @@
-# cd '.\Tecnico\IC\Cadeia de Markov\Probabilidade Limite\'
-
 import numpy as np
 import pandas as pd
+import os
 
+os.chdir(r"C:\Users\gabri\OneDrive\Documents\1° ano IF\Tecnico\IC\Cadeia de Markov\Probabilidade Limite")
 def resolver(P):
     try:
         n, n2 = P.shape
@@ -20,10 +20,13 @@ def resolver(P):
         print("Erro na resolução\n")
 
 def csv(q):
-    f = pd.read_csv(q)
-    P = f.iloc[:, 1:].to_numpy(dtype=float)
-    print("\n", P, "\n")
-    resolver(P)
+    try:
+        f = pd.read_csv(q)
+        P = f.iloc[:, 1:].to_numpy(dtype=float)
+        print("\n", P, "\n")
+        resolver(P)
+    except:
+        print("Erro na leitura do arquivo\n")
 
 while True:
     q=input("Encontrar a probabilidade limite de qual arquivo?\n")
@@ -31,8 +34,5 @@ while True:
     if q == "sair":
         break
     else:
-       try:
-            csv(q)
-       except:
-            print("Erro na leitura do arquivo\n")
+        csv(q)
     

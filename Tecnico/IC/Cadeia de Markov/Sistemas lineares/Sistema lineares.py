@@ -1,8 +1,8 @@
-# cd '.\tecnico\IC\Cadeia de Markov\Sistemas lineares\'
-
 import numpy as np
 import pandas as pd
+import os
 
+os.chdir(r"C:\Users\gabri\OneDrive\Documents\1° ano IF\Tecnico\IC\Cadeia de Markov\Sistemas lineares")
 def resolve(a,b):
     try:
         x = np.linalg.solve(a, b)
