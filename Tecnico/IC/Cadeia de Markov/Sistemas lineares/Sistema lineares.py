@@ -1,4 +1,4 @@
-# cd '.\tecnico\IC\Cadeia de Markov\'  
+# cd '.\tecnico\IC\Cadeia de Markov\Sistemas lineares\'
 
 import numpy as np
 import pandas as pd
