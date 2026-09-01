@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pyplot as plt
 s1= np.array([210, 205, 190, 185, 220, 240])
 s2= np.array([250, 260, 230, 210, 195, 200])
 month=np.arange(start=1, stop=13, step=1)
@@ -7,3 +8,10 @@ ma= np.array([month, a])
 b= np.sum(a)
 c= np.mean(a)
 print(ma, "\n", "Total: ", b, "\n", "Média: ", c)
+plt.figure(figsize=(8, 6))
+# plt.bar(month, a, color= ["#ff0055", "#ff5500", "#0055ff"])
+plt.plot(month, a, color= "#452f00", linewidth=5, linestyle="-")
+plt.title("Variação de consumo energético")
+plt.xlabel("Meses")
+plt.ylabel("Consumo(kWh)")
+plt.show()
