@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "DaXa",
+			"path": "DaXa"
+		},
+		{
+			"name": "stockfish",
+			"path": "../../../../../../Downloads/stockfish-windows-x86-64-universal/stockfish"
+		}
+	],
+	"settings": {}
+}

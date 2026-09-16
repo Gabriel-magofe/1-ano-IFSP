@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #1a365d;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/* Menu de Navegação Flexível */
+.menu-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #2b6cb0;
+}
+
+.menu-flex a {
+    color: #ffffff;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-flex a:hover {
+    background-color: #2c5282;
+}
+
+/* Estrutura de Layout Responsivo (Conteúdo + Sidebar) */
+.conteudo-container {
+    display: flex;
+    flex-wrap: wrap; /* permite que os itens dobrem de linha em telas menores */
+    justify-content: space-between; /* distribui o espaço entre a área principal e a barra lateral */
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+/* Dimensionamento Flexível dos Itens */
+.principal {
+    flex: 70%; /* ocupa 70% da largura do contêiner em telas maiores */
+    padding: 10px;
+}
+
+.sidebar {
+    flex: 25%; /* ocupa 25% da largura do contêiner em telas maiores */
+    background-color: #e2e8f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Cartões em Grid Flexível Interno */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; /* permite que os cartões passem para a linha seguinte em telas pequenas */
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.card {
+    flex: 1 1 200px; /* cresce e encolhe proporcionalmente com base inicial de 200px */
+    background-color: #ffffff;
+    padding: 15px;
+    border-left: 4px solid #2b6cb0;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Rodapé */
+.rodape {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a365d;
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+/* Seletor de idiomas flexível */
+.lang-switch {
+    margin-left: auto;
+    padding: 14px 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.lang-switch a {
+    color: #cbd5e0;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+.lang-switch a.ativo {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
