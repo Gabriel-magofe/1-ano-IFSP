@@ -24,10 +24,8 @@ def fatorial(n):
         while n!=0:
             n=n-1
             nn.append(n)
-
         for i in range(n1):
             r=r*nn[i]
-
         return r
 A=[]
 B=[0]*15
