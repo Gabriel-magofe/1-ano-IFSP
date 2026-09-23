@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portal Bilingue da SNCT 2026 – IFSP Campos do Jordão — Ciência Delas: Incentivando o Protagonismo Feminino na Pesquisa e Inovação</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Semana de inovação em Ciencia e Tecnologia</h1>
+        <p>Ciência Delas: Incentivando o Protagonismo Feminino na Pesquisa e Inovação</p>
+    </header>
+    <nav class="menu-flex">
+        <a href="#sobre">Sobre</a>
+        <a href="#Eventos">Eventos</a>
+        <a href="#participantes">participantes</a>
+        <a href="#contato">Contato</a>
+        <div class="lang-switch">
+            <a href="index.html" class="ativo">PT</a> | <a href="index-en.html">EN</a>
+        </div>
+    </nav>
+    <div class="conteudo-container">
+            
+            <main class="principal">
+                <div class="campo">
+                    <form>
+                        <fieldset>
+                            <div>
+                                <fieldset>
+                                    <div class="campo">
+                                        <legend>Campo de Inscrição</legend>
+                                        <label for="nome">Digite o seu nome: </label>
+                                        <input type="text" id="nome" name="nome" placeholder="Seu nome...">
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <div class="campo">
+                                        <label for="email">Digite o seu e-mail Academico/Institucional: </label>
+                                        <input type="email" id="email" name="email" placeholder="exemplo@ifsp.edu.br">
+                                    </div>
+                                </fieldset>
+                                    <div class="campo">
+                                        <label for="Cp">Categoria Profissional: </label>
+                                        <input type="radio" id="estudante" name="Opção" value="Estudante">
+                                        <label for="estudante">Estudante</label>
+                                        <input type="radio" id="Professor" name="Opção" value="Professor">
+                                        <label for="Professor">Professor</label>
+                                        <input type="radio" id="pesquisador" name="Opção" value="pesquisador">
+                                        <label for="pesquisador">Pesquisador</label>
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <div class="campo">
+                                        <label for="Eventos">Digite um evento de interese</label>
+                                        <input type="text" id="Eventos" name="Eventos" list="VEventos" placeholder="Digite um evento de interesse...">
+                                        <datalist id="VEventos">
+                                            <option value="Mesa-Redonda de Abertura: Desafios e Conquistas"></option>
+                                            <option value="Oficina Prática: Desenvolvimento Web e Interfaces Responsivas"></option>
+                                            <option value="Sessão de Pôsteres: Apresentação dos Trabalhos Selecionados"></option>
+                                            <option value="Palestra: Mulheres na Ciência e Tecnologia"></option>
+                                            <option value="Palestra: Neutrinos e Gluons"></option>
+                                            <option value="Palestra: Estrelas Super Massivas e Buracos Negros"></option>
+                                            <option value="Palestra: Concientização sobre o Uso Exessivo de IA"></option>
+                                        </datalist>  
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <div class="campo">
+                                        <label for="dataN">Data de Nascimento: </label>
+                                        <input type="date" id="nascimento" name="nascimento" min="1900-01-01">   
+                                    </div> 
+                                </fieldset>
+                                <fileldset>
+                                    <div class="campo">
+                                        <label for="comentario">Fale um pouco sobre o poruqe quer participar do evento</label>
+                                        <textarea name="comentario" id="comentario"
+                                            rows="4" cols="50">
+                                        </textarea>
+                                    </div> 
+                                </fileldset>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </main>
+        <aside class="sidebar">
+            <h3>Destaques da Programação</h3>
+            <ul>
+                <li><strong>Mesa-Redonda de Abertura:</strong> Desafios e Conquistas.</li>
+                <li><strong>Oficina Prática:</strong> Desenvolvimento Web e Interfaces Responsivas</li>
+                <li><strong>Sessão de Pôsteres:</strong> Apresentação dos Trabalhos Selecionados</li>
+            </ul>
+        </aside>
+
+    </div>
+    <footer class="rodape">
+        <p>© 2026 Semana Nacional de Ciência e Tecnologia — Ministério da Ciência, Tecnologia e Inovação</p>
+    </footer>
+
+</body>
+</html>
