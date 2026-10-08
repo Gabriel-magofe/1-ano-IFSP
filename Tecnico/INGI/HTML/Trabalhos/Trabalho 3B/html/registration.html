@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNCT 2026 Portal – IFSP Campos do Jordão | Science by Women</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Week of Innovation in Science and Technology</h1>
+        <p>Science by Women: Promoting Women's Leadership in Research and Innovation</p>
+    </header>
+    <nav class="menu-flex">
+        <a href="registration.html">Registration</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="about.html">About</a>
+        <a href="contacts.html">Contact</a>
+        <div class="lang-switch">
+            <a href="inscrição.html">PT</a> | <a href="registration.html" class="ativo">EN</a>
+        </div>
+    </nav>
+    <div class="conteudo-container">
+        
+        <main class="principal">
+            <h2 class="titulo-pagina">Registration</h2>
+            <form>
+                <fieldset>
+                    <legend>Registration Form</legend>
+                    <div class="campo">
+                        <label for="name">Full name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name">
+                    </div>
+                    <div class="campo">
+                        <label for="email">Academic/institutional email:</label>
+                        <input type="email" id="email" name="email" placeholder="example@ifsp.edu.br">
+                    </div>
+                </fieldset>
+                <fieldset class="radio" id="participantes">
+                    <legend>Participant category:</legend>
+                    <div class="radio-opcoes">
+                        <label><input type="radio" name="category" value="Student"> Student</label>
+                        <label><input type="radio" name="category" value="Teacher"> Teacher</label>
+                        <label><input type="radio" name="category" value="Researcher"> Researcher</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="campo">
+                        <label for="events">Choose an event:</label>
+                        <input type="text" id="events" name="events" list="event-list" placeholder="Choose an event of interest">
+                        <datalist id="event-list">
+                            <option value="Opening Roundtable: Challenges and Achievements"></option>
+                            <option value="Workshop: Web Development and Responsive Interfaces"></option>
+                            <option value="Poster Session: Selected Project Presentations"></option>
+                            <option value="Talk: Women in Science and Technology"></option>
+                        </datalist>
+                    </div>
+                    <div class="campo">
+                        <label for="birthdate">Date of birth:</label>
+                        <input type="date" id="birthdate" name="birthdate" min="1900-01-01">
+                    </div>
+                    <div class="campo" id="contato">
+                        <label for="comment">Tell us why you would like to take part in the event:</label>
+                        <textarea name="comment" id="comment" rows="4"></textarea>
+                    </div>
+                </fieldset>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+            </form>
+            <section id="sobre">
+                <h2>About the Event</h2>
+                <p>The National Week of Science and Technology brings students and faculty together to share knowledge with the community.</p>
+            </section>
+        </main>
+        <aside class="sidebar" id="Eventos">
+            <h3>Program Highlights</h3>
+            <ul>
+                <li><strong>Opening Roundtable:</strong> Challenges and Achievements.</li>
+                <li><strong>Workshop:</strong> Web Development and Responsive Interfaces.</li>
+                <li><strong>Poster Session:</strong> Selected Project Presentations.</li>
+            </ul>
+        </aside>
+
+    </div>
+    <footer class="rodape">
+        <p>© 2026 National Week of Science and Technology — Ministry of Science, Technology and Innovation</p>
+    </footer>
+
+</body>
+</html>

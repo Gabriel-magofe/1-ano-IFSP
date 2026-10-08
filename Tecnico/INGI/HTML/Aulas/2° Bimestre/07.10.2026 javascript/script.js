@@ -1,0 +1,10 @@
+alert("Hello World");
+console.log("Hello World");
+let num = prompt("Digite um número");
+let bibi = prompt(10+88);
+const a = prompt("Digite um número");
+const b = prompt(108);
+console.log(a);
+console.log(b);
+alert(num);
+console.log(num);

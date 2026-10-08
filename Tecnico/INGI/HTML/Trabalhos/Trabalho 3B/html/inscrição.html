@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portal Bilingue da SNCT 2026 – IFSP Campos do Jordão — Ciência Delas: Incentivando o Protagonismo Feminino na Pesquisa e Inovação</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Semana de inovação em Ciencia e Tecnologia</h1>
+        <p>Ciência Delas: Incentivando o Protagonismo Feminino na Pesquisa e Inovação</p>
+    </header>
+    <nav class="menu-flex">
+        <a href="inscrição.html">Inscrição</a>
+        <a href="progamação.html">programação</a>
+        <a href="sobre.html">sobre</a>
+        <a href="contato.html">Contato</a>
+        <div class="lang-switch">
+            <a href="inscrição.html" class="ativo">PT</a> | <a href="registration.html">EN</a>
+        </div>
+    </nav>
+    <div class="conteudo-container">
+        <main class="principal">
+            <h2 class="titulo-pagina">Inscrição</h2>
+            <form>
+                <fieldset>
+                    <legend>Campo de Inscrição</legend>
+                    <div class="campo">
+                        <label for="nome">Digite o seu nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome...">
+                    </div>
+                    <div class="campo">
+                        <label for="email">Digite o seu e-mail acadêmico/institucional:</label>
+                        <input type="email" id="email" name="email" placeholder="exemplo@ifsp.edu.br">
+                    </div>
+                </fieldset>
+                <fieldset class="radio" id="participantes">
+                    <legend>Categoria Profissional:</legend>
+                    <div class="radio-opcoes">
+                        <label><input type="radio" name="categoria" value="Estudante"> Estudante</label>
+                        <label><input type="radio" name="categoria" value="Professor"> Professor</label>
+                        <label><input type="radio" name="categoria" value="Pesquisador"> Pesquisador</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="campo">
+                        <label for="eventos">Digite um evento de interesse:</label>
+                        <input type="text" id="eventos" name="eventos" list="lista-eventos" placeholder="Digite um evento de interesse...">
+                        <datalist id="lista-eventos">
+                            <option value="Mesa-Redonda de Abertura: Desafios e Conquistas"></option>
+                            <option value="Oficina Prática: Desenvolvimento Web e Interfaces Responsivas"></option>
+                            <option value="Sessão de Pôsteres: Apresentação dos Trabalhos Selecionados"></option>
+                            <option value="Palestra: Mulheres na Ciência e Tecnologia"></option>
+                            <option value="Palestra: Neutrinos e Glúons"></option>
+                            <option value="Palestra: Estrelas Supermassivas e Buracos Negros"></option>
+                            <option value="Palestra: Conscientização sobre o Uso Excessivo de IA"></option>
+                        </datalist>
+                    </div>
+                    <div class="campo">
+                        <label for="nascimento">Data de Nascimento:</label>
+                        <input type="date" id="nascimento" name="nascimento" min="1900-01-01">
+                    </div>
+                    <div class="campo" id="contato">
+                        <label for="comentario">Fale um pouco sobre por que quer participar do evento:</label>
+                        <textarea name="comentario" id="comentario" rows="4"></textarea>
+                    </div>
+                </fieldset>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </form>
+
+            <section id="sobre">
+                <h2>Sobre o Evento</h2>
+                <p>A Semana Nacional de Ciência e Tecnologia reúne estudantes e docentes para compartilhar conhecimentos com a comunidade.</p>
+            </section>
+        </main>
+        <aside class="sidebar" id="Eventos">
+            <h3>Destaques da Programação</h3>
+            <ul>
+                <li><strong>Mesa-Redonda de Abertura:</strong> Desafios e Conquistas.</li>
+                <li><strong>Oficina Prática:</strong> Desenvolvimento Web e Interfaces Responsivas</li>
+                <li><strong>Sessão de Pôsteres:</strong> Apresentação dos Trabalhos Selecionados</li>
+            </ul>
+        </aside>
+
+    </div>
+    <footer class="rodape">
+        <p>© 2026 Semana Nacional de Ciência e Tecnologia — Ministério da Ciência, Tecnologia e Inovação</p>
+    </footer>
+
+</body>
+</html>
