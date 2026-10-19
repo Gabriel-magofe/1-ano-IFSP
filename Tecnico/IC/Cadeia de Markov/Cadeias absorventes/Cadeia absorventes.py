@@ -41,17 +41,17 @@ for file in files:
     R.to_csv(pasta_saida_R / file.name, index=False, header=False)
     
     B = np.linalg.solve(np.eye(len(l_trs)) - Q.to_numpy(dtype=float), R.to_numpy(dtype=float))
-    print(f"\n{'=' * 60}\nArquivo: {file.name}\n{'=' * 60}")
-    print("Probabilidades de absorção (B):")
-    print(np.array2string(B, precision=4, suppress_small=True))
+    print(f"\n\n\nArquivo: {file.name}\n")
+    print("Probabilidade limite:")
+    print(B)
     
     B = pd.DataFrame(B)
     pasta_saida_B.mkdir(parents=True, exist_ok=True)
     B.to_csv(pasta_saida_B / file.name, index=False, header=False)
     
     T = np.linalg.solve(np.eye(len(l_trs)) - Q.to_numpy(dtype=float), np.eye(len(l_trs)))
-    print("\nMatriz fundamental (T):")
-    print(np.array2string(T, precision=4, suppress_small=True))
+    print("\nTempo médio de absorção:")
+    print(T)
     
     T = pd.DataFrame(T)
     pasta_saida_T.mkdir(parents=True, exist_ok=True)
