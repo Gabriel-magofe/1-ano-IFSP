@@ -2,7 +2,6 @@ import numpy as np
 import pandas as pd
 import os
 
-os.chdir(r"C:\Users\gabri\OneDrive\Documents\1° ano IF\Tecnico\IC\Cadeia de Markov\Probabilidade Limite")
 def resolver(P):
     try:
         n, n2 = P.shape
@@ -28,11 +27,13 @@ def csv(q):
     except:
         print("Erro na leitura do arquivo\n")
 
-while True:
-    q=input("Encontrar a probabilidade limite de qual arquivo?\n")
+if __name__ == "__main__":
+    os.chdir(r"C:\Users\gabri\OneDrive\Documents\1° ano IF\Tecnico\IC\Cadeia de Markov\Probabilidade Limite")
+    while True:
+        q=input("Encontrar a probabilidade limite de qual arquivo?\n")
 
-    if q == "sair":
-        break
-    else:
-        csv(q)
+        if q == "sair":
+            break
+        else:
+            csv(q)
     
