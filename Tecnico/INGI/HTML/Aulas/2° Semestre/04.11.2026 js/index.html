@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campos do Jordão - The Brazilian Switzerland</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="cabecalho">
+        <h1>Campos do Jordão</h1>
+        <p>The Brazilian Switzerland in the Mantiqueira Mountains</p>
+    </header>
+
+    <!-- Flexible Navigation Menu -->
+    <nav class="menu-flex">
+        <a href="#about">About</a>
+        <a href="#attractions">Attractions</a>
+        <a href="#gastronomy">Gastronomy</a>
+        <a href="#contact">Contact</a>
+        <div class="tools">
+            <button type="button" id="font-smaller" onclick="changeFontSize(-2)">A-</button>
+            <button type="button" id="font-bigger" onclick="changeFontSize(2)">A+</button>
+            <button type="button" id="theme-btn" onclick="toggleTheme()">Dark mode</button>
+        </div>
+    </nav>
+
+    <!-- Main Container for Responsive Layout -->
+    <div class="conteudo-container">
+
+        <!-- Main Content Area -->
+        <main class="principal">
+            <section id="about">
+                <h2>Discover the City</h2>
+                <p>Located in the Mantiqueira Mountains, Campos do Jordão is the highest municipality in Brazil. It is famous for its European-style architecture, cold climate, and traditional International Winter Festival.</p>
+            </section>
+
+            <section id="attractions">
+                <h2>Top Attractions</h2>
+                <div class="cards-container">
+                    <article class="card">
+                        <h3>Vila Capivari</h3>
+                        <p>Tourist center filled with restaurants, chocolate shops, and half-timbered style buildings.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Elephant Hill</h3>
+                        <p>Offers an incredible panoramic view of the city, accessible by cable car or car.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Amantikir Park</h3>
+                        <p>Themed gardens from various parts of the world with breathtaking landscapes.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="gastronomy">
+                <h2>Local Gastronomy</h2>
+                <div class="cards-container">
+                    <article class="card">
+                        <h3>Cheese Fondue</h3>
+                        <p>The most traditional dish of the city, perfect for cold nights.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Artisanal Chocolate</h3>
+                        <p>Handmade chocolates sold in the shops of Vila Capivari.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Mountain Trout</h3>
+                        <p>Fresh trout from the cold rivers of the Mantiqueira Mountains.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Plan Your Visit</h2>
+                <form action="#" method="get">
+
+                    <div class="campo">
+                        <label for="name">Full name:</label>
+                        <input type="text" id="name" name="name" placeholder="Type your full name">
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com">
+                    </div>
+
+                    <div class="campo">
+                        <label for="month">Month of visit:</label>
+                        <select id="month" name="month">
+                            <option value="">Select a month...</option>
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="visitors">Number of visitors:</label>
+                        <input type="number" id="visitors" name="visitors" min="1" max="10" value="1">
+                    </div>
+
+                    <div class="campo">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us what you would like to know..."></textarea>
+                    </div>
+
+                    <div class="botoes-flex">
+                        <input type="submit" value="Send">
+                        <input type="reset" value="Clear">
+                    </div>
+
+                </form>
+            </section>
+        </main>
+
+        <!-- Sidebar / Travel Tips -->
+        <aside class="sidebar">
+            <h3>Travel Tips</h3>
+            <ul>
+                <li><strong>Best time:</strong> June to August (Winter).</li>
+                <li><strong>Climate:</strong> Temperatures can drop below 0°C (32°F) at night.</li>
+                <li><strong>Gastronomy:</strong> Try the famous fondues and artisanal chocolates.</li>
+                <li id="season"></li>
+            </ul>
+            <!-- Aula 34: conversor de temperatura -->
+            <div class="converter">
+                <h3>Temperature Converter</h3>
+                <label for="celsius">Temperature in °C:</label>
+                <input type="number" id="celsius">
+                <button type="button" id="convert-btn">Convert to °F</button>
+                <p id="result"></p>
+            </div>
+
+        </aside>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="rodape">
+         <p>&copy; <span id="year">2026</span> Campos do Jordão Travel Guide</p>
+
+    </footer>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
