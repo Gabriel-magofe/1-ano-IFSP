@@ -1,0 +1,219 @@
+/* ===== Estilo geral ===== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #eef3ee;
+    color: #222222;
+}
+
+button {
+    padding: 8px 16px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #2e7d32;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1b5e20;
+}
+
+/* ===== Cabeçalho e rodapé ===== */
+.header {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.header button {
+    background-color: white;
+    color: #2e7d32;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+/* ===== Leiaute: jogo e placar lado a lado (Flexbox) ===== */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+#game-box {
+    flex: 2;
+    min-width: 280px;
+    text-align: center;
+}
+
+aside.box {
+    flex: 1;
+    min-width: 220px;
+}
+
+/* ===== Vidas ===== */
+#lives {
+    font-size: 2rem;
+    min-height: 50px;
+    margin: 15px 0;
+}
+
+.pine-nut {
+    margin: 0 4px;
+}
+
+/* ===== Palpite ===== */
+.guess-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#guess-input {
+    width: 90px;
+    padding: 8px;
+    font-size: 1rem;
+    border: 2px solid #999999;
+    border-radius: 6px;
+}
+
+.arduino {
+    width : "60px";
+    height : "auto";
+    position : "fixed";
+    top : "150px";
+    right :"300px";
+    z-Index: "1000";
+}
+/* Classe ligada pelo JS quando o palpite é inválido */
+#guess-input.invalid {
+    border-color: red;
+    background-color: #ffebee;
+}
+
+/* ===== Mensagens (as classes são trocadas pelo JS) ===== */
+#message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.high {
+    color: #e65100;
+}
+
+.low {
+    color: #1565c0;
+}
+
+.correct {
+    color: #1b5e20;
+}
+
+.wrong {
+    color: #b71c1c;
+}
+
+.warning {
+    color: #6d4c41;
+}
+
+/* Fundo da área do jogo ao final da rodada */
+#game-box.win {
+    background-color: #c8e6c9;
+}
+
+#game-box.lose {
+    background-color: #ffcdd2;
+}
+
+/* ===== Histórico ===== */
+#history-list li {
+    padding: 4px 0;
+}
+
+.won {
+    color: green;
+}
+
+.lost {
+    color: red;
+}
+
+/* ===== Tema escuro (classe ligada e desligada pelo JS) ===== */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #eeeeee;
+}
+
+body.dark-mode .box {
+    background-color: #2d2d2d;
+}
+
+body.dark-mode #game-box.win {
+    background-color: #1b5e20;
+}
+
+body.dark-mode #game-box.lose {
+    background-color: #7f1d1d;
+}
+
+body.dark-mode .high {
+    color: #ffb74d;
+}
+
+body.dark-mode .low {
+    color: #90caf9;
+}
+
+body.dark-mode .correct,
+body.dark-mode .won {
+    color: #a5d6a7;
+}
+
+body.dark-mode .wrong,
+body.dark-mode .lost {
+    color: #ef9a9a;
+}
+
+body.dark-mode .warning {
+    color: #d7ccc8;
+}
+
+/* dados do rodapé */
+
+#nomes {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555555;
+    margin-top: 20px;
+}
+#year {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555555;
+    margin-top: 5px;
+}

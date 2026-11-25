@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher or Lower - Mountain Guessing Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Higher or Lower</h1>
+        <p>The Mountain Guessing Game of Campos do Jordão</p>
+        <!-- Preenchido pelo JavaScript (saudação conforme a hora) -->
+        <p id="greeting"></p>
+        <button type="button" id="theme-btn">Dark mode</button>
+    </header>
+    
+    <div class="container">
+
+        <!-- Área do jogo -->
+        <main id="game-box" class="box">
+            <h2>Can you guess the secret number?</h2>
+            <p>I am thinking of a number from <strong>1</strong> to <strong>50</strong>. You have <strong>5 arduininhos</strong> in each round. Each wrong guess eats one!</p>
+
+            <button type="button" id="new-round-btn">New Round</button>
+
+            <!-- Vidas: os pinhões são criados e removidos pelo JavaScript -->
+            <div id="lives">
+                <span id="arduino"></span>
+                <img src="img/arduino.jpg" alt="Arduininho">
+            </div>
+
+            <div class="guess-area">
+                <label for="guess-input">Your guess:</label>
+                <input type="number" id="guess-input" placeholder="1 - 50">
+                <button type="button" id="guess-btn">Guess</button>
+            </div>
+
+            <p id="message">Click "New Round" to start.</p>
+        </main>
+
+        <!-- Placar e histórico -->
+        <aside class="box">
+            <h2>Scoreboard</h2>
+            <p>Rounds won: <span id="wins">0</span></p>
+            <p>Rounds lost: <span id="losses">0</span></p>
+
+            <h2>Round History</h2>
+            <ul id="history-list"></ul>
+
+            <button type="button" id="restart-btn">Restart Game</button>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Troque pelos nomes da dupla -->
+        <p>&copy; <span id="year"></span> Higher or Lower - Made by: Gabriel Martins Gonçalves Ferreira  &  Matheus Magalhães Furtado</p>
+    </footer>
+
+    <!-- O script fica no fim do body: os elementos já existem quando ele é executado -->
+    <script src="js/script.js"></script>
+</body>
+</html>
